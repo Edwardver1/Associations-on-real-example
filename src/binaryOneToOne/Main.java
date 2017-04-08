@@ -1,4 +1,4 @@
-package binaryAddtition;
+package binaryOneToOne;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -14,7 +14,7 @@ public class Main {
 		IdCard card = new IdCard (123,date1,emp);
 		
 		System.out.println(card);
-		System.out.println("Check employee delete from card");
+//		System.out.println("Check employee delete from card");
 //		card.removeEmployee();
 //		System.out.println(card.getEmployee());
 //		System.out.println(emp.getIdCard());
@@ -22,6 +22,16 @@ public class Main {
 //		emp.removeIdCard();
 //		System.out.println(card.getEmployee());
 //		System.out.println(emp.getIdCard());
+		
+//		card.setEmployee(null);
+//		System.out.println();
+		
+		
+		
+		///dsfsdfsd
+		
+		
+		
 
 
 		

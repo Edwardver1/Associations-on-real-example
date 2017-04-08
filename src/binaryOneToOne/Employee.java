@@ -1,4 +1,4 @@
-package binaryAddtition;
+package binaryOneToOne;
 
 public class Employee {
 	 
@@ -41,9 +41,9 @@ public class Employee {
 	}
 
 	public void setIdCard(IdCard idCard) {
-		if(idCard != null){
-			if(this.idCard != idCard){
-				this.idCard = idCard;
+		if(this.idCard != idCard){
+			this.idCard = idCard;
+			if(idCard != null){
 				this.idCard.setEmployee(this);
 			}
 		}
@@ -51,10 +51,6 @@ public class Employee {
 	
 	public void removeIdCard(){
 		this.idCard.setEmployeeNull();
-		this.idCard = null;
-	}
-	
-	public void setIdCardNull(){
 		this.idCard = null;
 	}
 

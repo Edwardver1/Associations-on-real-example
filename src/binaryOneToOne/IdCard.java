@@ -1,4 +1,4 @@
-package binaryAddtition;
+package binaryOneToOne;
 
 import java.time.LocalDate;
 
@@ -50,16 +50,18 @@ public class IdCard {
 				this.employee = employee;
 				this.employee.setIdCard(this);;
 			}
+		}else{
+			throw new IllegalArgumentException("Employee can't be null");
 		}
 	}
 
 	public void removeEmployee(){
-		this.employee.setIdCardNull();
+		this.employee.setIdCard(null);
 		this.employee = null;
 		
 	}
 	
-	public void setEmployeeNull(){
+	public void setEmployeeNull(){ // needed for removeIdCard() method , as you can't create IdCard with null emp
 		this.employee = null;
 	}
 	
