@@ -87,22 +87,15 @@ public class BookingCar {
 	
 	}
 	
-	public void removeBooking(){
-//		this.booking.removeBooking_car(this);
-		this.booking = null;
-	}
-	
-	public void removeCar(){
-//		if(this.car != null){
-//			this.car.removeBooking_car(this);
-//		}
-
-		this.car=null;
-	}
-
 	public void removeReferences(){
-        this.booking.removeBooking_car(this);
-        this.car.removeBooking_car(this);
+        if (this.car != null){
+        	this.car.removeBooking_car(this);
+        	this.car = null;
+        }
+        if(this.booking != null){
+        	this.booking.removeBooking_car(this);
+        	this.booking = null;
+        }
 	}
 
 

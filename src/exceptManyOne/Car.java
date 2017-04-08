@@ -99,14 +99,8 @@ public class Car implements Serializable {
 		}else{
 			if( booking_cars.contains(booking_car)){
 				booking_cars.remove(booking_car);
-//				booking_car.removeCar();
-//				booking_car.removeBooking();
 				booking_car.removeReferences();
-				booking_car.removeCar();
 			}
-//			}else{
-//				throw new IllegalArgumentException("There is no such booking car");
-//			}
 		}
 	}
 	

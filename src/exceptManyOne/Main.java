@@ -24,8 +24,8 @@ public class Main {
 		Car car1 = new Car("BMW", "5" , dateTime, "black", engine1,mike);
 	    car1.addFeature("ABS");
 	    car1.addFeature("Bluetooth");
-//	    Booking booking1 = new Booking ("1","Chopin Airport","Modlin airport");
-//	    BookingCar bookingCar = new BookingCar(dateTime,dateTime,car1,booking1);
+	    Booking booking1 = new Booking ("1","Chopin Airport","Modlin airport");
+	    BookingCar bookingCar = new BookingCar(dateTime,dateTime,car1,booking1);
 		Car car2 = new Car("Mercedes", "e220" , dateTime, "black", engine2,mike);
 		
 		/*** Binary association  ***/
@@ -34,10 +34,16 @@ public class Main {
 //        mike.removeCar(car1); // checking for reference to be deleted
 //        System.out.println("fdfd");
 //        System.out.println(mike);
+//        System.out.println("Check if owner deleted from car");
 //        System.out.println(car1.getOwner());
+//        System.out.println("Check if features deleted from Car");
 //        System.out.println(car1.getFeatures()); // check if features deleted
+//        System.out.println("Check if bookingCar deleted from Car");
 //        System.out.println(car1.getBooking_car());//check if bookingCar deleted
+//        System.out.println("Check of booking deleted from BookingCar");
 //        System.out.println(bookingCar.getBooking());//check if booking Deleted
+//        System.out.println("Checkif car deleted from BookingCar");
+//        System.out.println(bookingCar.getCar());
 		
 //        System.out.println(booking1.getBooking_car());
 //        booking1.removeBooking_car(bookingCar); // check if bookingCar and car deleted on booking side
@@ -50,26 +56,24 @@ public class Main {
 
 		
 		
-        Booking booking1 = new Booking ("1","Chopin Airport","Modlin airport");	
-	    BookingCar bookingCar = new BookingCar(dateTime,dateTime,car1,booking1);
+//        Booking booking1 = new Booking ("1","Chopin Airport","Modlin airport");	
+//	    BookingCar bookingCar = new BookingCar(dateTime,dateTime,car1,booking1);
   
-	    System.out.println(bookingCar);
+//	    System.out.println(bookingCar);
 //	    bookingCar.removeReferences();
 //	    bookingCar.setCar(car1);
-	    car1.removeBooking_car(bookingCar);
-	    System.out.println("Check from booking");
-	    System.out.println(booking1.getBooking_car());
-	    System.out.println("Check from car");
-	    System.out.println(car1.getBooking_car());
-	    System.out.println("Check from BookingCar");
-	    System.out.println(bookingCar.getBooking());
-	    System.out.println(bookingCar.getCar());
+//	    car1.removeBooking_car(bookingCar);
+//	    booking1.removeBooking_car(bookingCar);
+//	    System.out.println("Check from booking");
+//	    System.out.println(booking1.getBooking_car());
+//	    System.out.println("Check from car");
+//	    System.out.println(car1.getBooking_car());
+//	    System.out.println("Check from BookingCar");
+//	    System.out.println(bookingCar.getBooking());
+//	    System.out.println(bookingCar.getCar());
 //	    bookingCar.setCar(car2);// check if changes
 //	    System.out.println(car1.getBooking_car());
-//	    car1.removeBooking_car(bookingCar);
-//	    System.out.println("heelo");
-//	    System.out.println(car1.getBooking_car());
-//	    System.out.println(bookingCar.getCar());
+
 	    
 //	    PaymentInvoice invoice = new PaymentInvoice ("12", 230);
 //	    System.out.println(invoice);

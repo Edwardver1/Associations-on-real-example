@@ -83,10 +83,7 @@ public class Booking {
 		}else{
 			if( this.booking_cars.contains(booking_car)){
 				this.booking_cars.remove(booking_car);
-//				booking_car.removeBooking();
-//				booking_car.removeCar();
 				booking_car.removeReferences();
-				booking_car.removeBooking();
 			}
 		}
 	}
