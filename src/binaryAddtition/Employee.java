@@ -6,7 +6,7 @@ public class Employee {
 	private String surname;
 	private IdCard idCard;
 	
-	public Employee (String name, String surname, IdCard idCard){
+	public Employee (String name, String surname){
 		this.name = name;
 		this.surname = surname;
 	}
@@ -50,7 +50,17 @@ public class Employee {
 	}
 	
 	public void removeIdCard(){
+		this.idCard.setEmployeeNull();
 		this.idCard = null;
+	}
+	
+	public void setIdCardNull(){
+		this.idCard = null;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", surname=" + surname  + "]";
 	}
 	
 	

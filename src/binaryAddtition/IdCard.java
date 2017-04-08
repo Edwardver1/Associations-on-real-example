@@ -8,9 +8,10 @@ public class IdCard {
 	private LocalDate dateExpire;
 	private Employee employee;
 	
-	public IdCard(Integer number, LocalDate dateExpire){
+	public IdCard(Integer number, LocalDate dateExpire, Employee employee){
 		this.number = number;
 		this.dateExpire = dateExpire;
+		setEmployee(employee);
 		
 	}
 
@@ -51,16 +52,20 @@ public class IdCard {
 			}
 		}
 	}
-	
+
 	public void removeEmployee(){
+		this.employee.setIdCardNull();
+		this.employee = null;
+		
+	}
+	
+	public void setEmployeeNull(){
 		this.employee = null;
 	}
 	
-	public void removeEmployee(Employee emp){
-		this.employee = null;
-		emp.removeIdCard();
+	@Override
+	public String toString() {
+		return "IdCard [number=" + number + ", dateExpire=" + dateExpire + ", employee=" + employee + "]";
 	}
-	
-	
 	
 }
